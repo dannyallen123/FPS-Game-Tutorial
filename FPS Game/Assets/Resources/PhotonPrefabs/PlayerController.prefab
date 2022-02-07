@@ -105,8 +105,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 8686176857634152276}
   - {fileID: 4612885799469087862}
+  - {fileID: 8686176857634152276}
   m_Father: {fileID: 1488053958305132835}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -430,7 +430,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   mouseSensitivity: 5
   sprintSpeed: 10
   walkSpeed: 7.5
-  jumpForce: 300
+  jumpForce: 700
   smoothTime: 0.15
   items:
   - {fileID: 3968076902418886796}
@@ -1088,7 +1088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3218887557126065164
 Transform:
   m_ObjectHideFlags: 0
@@ -1574,7 +1574,7 @@ RectTransform:
   m_Children:
   - {fileID: 887523828893106830}
   m_Father: {fileID: 5858431374859684867}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16748,7 +16748,7 @@ RectTransform:
   - {fileID: 64391674561619021}
   - {fileID: 6880742015764589663}
   m_Father: {fileID: 5858431374859684867}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

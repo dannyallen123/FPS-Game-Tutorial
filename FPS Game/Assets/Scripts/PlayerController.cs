@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         PV = GetComponent<PhotonView>();
 
         playerManager = PhotonView.Find((int)PV.InstantiationData[0]).GetComponent<PlayerManager>();
+        Cursor.visible = false;
     }
 
     void Start()
@@ -103,6 +104,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
             items[itemIndex].Use();
         }
 
+
+
+
+
+
         if (transform.position.y < -10f) // Die if you fall out of the world
         {
             Die();
@@ -114,7 +120,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * mouseSensitivity);
 
         verticalLookRotation += Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
-        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
+        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -70f, 70f);
 
         cameraHolder.transform.localEulerAngles = Vector3.left * verticalLookRotation;
     }
